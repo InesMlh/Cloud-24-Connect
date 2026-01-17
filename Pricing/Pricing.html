@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifs - Cloud24Connect</title>
+    <link rel="stylesheet" href="StylePricing.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="../Translations.js"></script>
+    <script src="Pricing.js"></script>
+</head>
+
+<body data-theme="dark">
+    <div id="mouse-gradient"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <a href="../Cloud2Connect.html">
+                <img src="../Images/logoCloud24connectWHITE.png" alt="Cloud24Connect Logo" class="logo-image logo-dark">
+                <img src="../Images/logoCloud24connect.png" alt="Cloud24Connect Logo" class="logo-image logo-light">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../Cloud2Connect.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="../solution/solutions.html"><span data-i18n="nav.solutions">Solutions</span></a></li>
+            <li><a href="../Pricing/Pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+            <li><a href="../AboutUs/AboutUs.html" data-i18n="nav.about">About</a></li>
+            <li><a href="../Blog/Blog.html" data-i18n="nav.blog">Blog</a></li>
+            <li><a href="../contact/contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <div class="lang-dropdown">
+                <button class="lang-toggle" aria-label="Language">
+                    <i data-lucide="globe"></i>
+                    <span class="current-lang">EN</span>
+                    <i data-lucide="chevron-down" class="lang-chevron"></i>
+                </button>
+                <div class="lang-menu">
+                    <button class="lang-option" data-lang="en">
+                        <span>English</span>
+                    </button>
+                    <button class="lang-option" data-lang="fr">
+                        <span>Français</span>
+                    </button>
+                </div>
+            </div>
+
+            <label class="theme-switch">
+                <input type="checkbox" class="theme-switch__checkbox">
+                <div class="theme-switch__container">
+                    <div class="theme-switch__clouds"></div>
+                    <div class="theme-switch__circle-container">
+                        <div class="theme-switch__sun-moon-container">
+                            <div class="theme-switch__moon">
+                                <div class="theme-switch__spot"></div>
+                                <div class="theme-switch__spot"></div>
+                                <div class="theme-switch__spot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </label>
+
+            <a href="#" class="cta-button">
+                <span data-i18n="nav.getStarted">/span>
+                    <i data-lucide="arrow-right"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-content">
+            <h1>
+                <span data-i18n="pricing.hero.title1">Des</span> <span class="gradient-text" data-i18n="pricing.hero.title2">Tarifs Simples</span><br>
+                <span data-i18n="pricing.hero.title3">Pour Tous Vos Projets</span>
+                </h1>
+                <p data-i18n="pricing.hero.subtitle">Choisissez l'offre qui correspond à vos besoins. Sans engagement, avec possibilité d'upgrade à tout moment.</p>
+        </div>
+        </section>
+
+        <!-- Pricing Comparison Section -->
+        <section class="pricing-main">
+            <div class="pricing-inner">
+                <div class="pricing-header">
+                    <h2 class="section-title" data-i18n="pricing.hosting.title">Nos Offres d'Hébergement</h2>
+                    <p class="section-subtitle" data-i18n="pricing.hosting.subtitle">Des solutions flexibles pour tous les types de projets</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Starter Plan -->
+                    <article class="pricing-card">
+                        <header class="pricing-card-header">
+                            <div class="plan-icon">
+                                <i data-lucide="zap"></i>
+                            </div>
+                            <h3 class="pricing-name" data-i18n="pricing.hosting.starter.name">Starter</h3>
+                            <p class="pricing-tag" data-i18n="pricing.hosting.starter.tag">Idéal pour débuter</p>
+                            <div class="pricing-price">5 €<span class="pricing-period" data-i18n="pricing.period">/
+                                mois</span></div>
+                        </header>
+                        <ul class="pricing-features">
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.starter.feature1">10 GB
+                                Stockage SSD</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.starter.feature2">100 GB Bande
+                                passante</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.starter.feature3">1 Site
+                                web</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.starter.feature4">5 Comptes
+                                email</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.starter.feature5">Sauvegardes
+                                hebdomadaires</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.starter.feature6">SSL
+                                gratuit</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.starter.feature7">Support par
+                                email</span></li>
+                        </ul>
+                        <div class="pricing-cta">
+                            <a href="#" class="btn btn-primary btn-ghost" data-i18n="pricing.hosting.starter.cta">Choisir
+                            Starter</a>
+                        </div>
+                    </article>
+
+                    <!-- Pro Plan (Recommended) -->
+                    <article class="pricing-card recommended">
+                        <div class="recommended-badge">
+                            <i data-lucide="star"></i>
+                            <span data-i18n="pricing.recommended">Recommandé</span>
+                        </div>
+                        <header class="pricing-card-header">
+                            <div class="plan-icon">
+                                <i data-lucide="rocket"></i>
+                            </div>
+                            <h3 class="pricing-name" data-i18n="pricing.hosting.pro.name">Pro</h3>
+                            <p class="pricing-tag" data-i18n="pricing.hosting.pro.tag">Pour la croissance</p>
+                            <div class="pricing-price">10 €<span class="pricing-period" data-i18n="pricing.period">/
+                                mois</span></div>
+                        </header>
+                        <ul class="pricing-features">
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.pro.feature1">50 GB Stockage
+                                SSD</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.pro.feature2">Bande passante
+                                illimitée</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.pro.feature3">5 Sites
+                                web</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.pro.feature4">Comptes email
+                                illimités</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.pro.feature5">Sauvegardes
+                                quotidiennes</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.pro.feature6">SSL gratuit +
+                                CDN</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.pro.feature7">Support
+                                prioritaire 24/7</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.pro.feature8">Protection
+                                DDoS</span></li>
+                        </ul>
+                        <div class="pricing-cta">
+                            <a href="#" class="btn btn-primary" data-i18n="pricing.hosting.pro.cta">Choisir Pro</a>
+                        </div>
+                    </article>
+
+                    <!-- Business Plan -->
+                    <article class="pricing-card">
+                        <header class="pricing-card-header">
+                            <div class="plan-icon">
+                                <i data-lucide="briefcase"></i>
+                            </div>
+                            <h3 class="pricing-name" data-i18n="pricing.hosting.business.name">Business</h3>
+                            <p class="pricing-tag" data-i18n="pricing.hosting.business.tag">Pour évoluer en toute confiance
+                            </p>
+                            <div class="pricing-price">20 €<span class="pricing-period" data-i18n="pricing.period">/
+                                mois</span></div>
+                        </header>
+                        <ul class="pricing-features">
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.business.feature1">200 GB
+                                Stockage SSD</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.business.feature2">Bande
+                                passante illimitée</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.business.feature3">Sites web
+                                illimités</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.business.feature4">Comptes
+                                email illimités</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.business.feature5">Sauvegardes
+                                en temps réel</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.business.feature6">SSL gratuit
+                                + CDN Premium</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.business.feature7">Support
+                                dédié 24/7</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.business.feature8">Protection
+                                DDoS avancée</span></li>
+                            <li><i data-lucide="check"></i> <span data-i18n="pricing.hosting.business.feature9">Staging
+                                environment</span></li>
+                        </ul>
+                        <div class="pricing-cta">
+                            <a href="#" class="btn btn-primary btn-ghost" data-i18n="pricing.hosting.business.cta">Demander
+                            un devis</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cloud Servers Pricing -->
+        <section class="cloud-pricing">
+            <div class="pricing-inner">
+                <div class="pricing-header">
+                    <h2 class="section-title" data-i18n="pricing.cloud.title">Serveurs Cloud</h2>
+                    <p class="section-subtitle" data-i18n="pricing.cloud.subtitle">Infrastructure scalable à la demande</p>
+                </div>
+
+                <div class="pricing-grid cloud-grid">
+                    <!-- Cloud Basic -->
+                    <article class="pricing-card">
+                        <header class="pricing-card-header">
+                            <div class="plan-icon">
+                                <i data-lucide="server"></i>
+                            </div>
+                            <h3 class="pricing-name" data-i18n="pricing.cloud.basic.name">Cloud Basic</h3>
+                            <p class="pricing-tag" data-i18n="pricing.cloud.basic.tag">Instance dédiée</p>
+                            <div class="pricing-price">15 €<span class="pricing-period">/ mois</span></div>
+                        </header>
+                        <ul class="pricing-features">
+                            <li><i data-lucide="cpu"></i> 2 vCPU</li>
+                            <li><i data-lucide="hard-drive"></i> 4 GB RAM</li>
+                            <li><i data-lucide="database"></i> 80 GB SSD</li>
+                            <li><i data-lucide="wifi"></i> 3 TB Transfert</li>
+                            <li><i data-lucide="shield"></i> Protection DDoS</li>
+                            <li><i data-lucide="clock"></i> Disponibilité 99.9%</li>
+                        </ul>
+                        <div class="pricing-cta">
+                            <a href="#" class="btn btn-primary btn-ghost">Déployer</a>
+                        </div>
+                    </article>
+
+                    <!-- Cloud Pro -->
+                    <article class="pricing-card">
+                        <header class="pricing-card-header">
+                            <div class="plan-icon">
+                                <i data-lucide="cloud"></i>
+                            </div>
+                            <h3 class="pricing-name">Cloud Pro</h3>
+                            <p class="pricing-tag">Performance optimale</p>
+                            <div class="pricing-price">30 €<span class="pricing-period">/ mois</span></div>
+                        </header>
+                        <ul class="pricing-features">
+                            <li><i data-lucide="cpu"></i> 4 vCPU</li>
+                            <li><i data-lucide="hard-drive"></i> 8 GB RAM</li>
+                            <li><i data-lucide="database"></i> 160 GB SSD</li>
+                            <li><i data-lucide="wifi"></i> 5 TB Transfert</li>
+                            <li><i data-lucide="shield"></i> Protection DDoS avancée</li>
+                            <li><i data-lucide="clock"></i> Disponibilité 99.95%</li>
+                        </ul>
+                        <div class="pricing-cta">
+                            <a href="#" class="btn btn-primary btn-ghost">Déployer</a>
+                        </div>
+                    </article>
+
+                    <!-- Cloud Enterprise -->
+                    <article class="pricing-card">
+                        <header class="pricing-card-header">
+                            <div class="plan-icon">
+                                <i data-lucide="layers"></i>
+                            </div>
+                            <h3 class="pricing-name">Cloud Enterprise</h3>
+                            <p class="pricing-tag">Puissance maximale</p>
+                            <div class="pricing-price">60 €<span class="pricing-period">/ mois</span></div>
+                        </header>
+                        <ul class="pricing-features">
+                            <li><i data-lucide="cpu"></i> 8 vCPU</li>
+                            <li><i data-lucide="hard-drive"></i> 16 GB RAM</li>
+                            <li><i data-lucide="database"></i> 320 GB SSD</li>
+                            <li><i data-lucide="wifi"></i> 10 TB Transfert</li>
+                            <li><i data-lucide="shield"></i> Protection DDoS premium</li>
+                            <li><i data-lucide="clock"></i> Disponibilité 99.99%</li>
+                        </ul>
+                        <div class="pricing-cta">
+                            <a href="#" class="btn btn-primary btn-ghost">Déployer</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <div class="faq-inner">
+                <div class="faq-header">
+                    <h2 class="section-title" data-i18n="pricing.faq.title">Questions Fréquentes</h2>
+                    <p class="section-subtitle" data-i18n="pricing.faq.subtitle">Tout ce que vous devez savoir sur nos offres
+                    </p>
+                </div>
+
+                <div class="faq-grid">
+                    <article class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="pricing.faq.q1">Puis-je changer d'offre à tout moment ?</h3>
+                            <i data-lucide="chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="pricing.faq.a1">Oui, vous pouvez upgrader ou downgrader votre offre à tout moment depuis votre espace client. Les changements sont appliqués immédiatement.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="pricing.faq.q2">Y a-t-il des frais cachés ?</h3>
+                            <i data-lucide="chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="pricing.faq.a2">Non, nos tarifs sont transparents. Le prix affiché est le prix que vous payez. Aucun frais supplémentaire ni engagement de durée.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="pricing.faq.q3">Quelle est la politique de remboursement ?</h3>
+                            <i data-lucide="chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="pricing.faq.a3">Nous offrons une garantie satisfait ou remboursé de 30 jours sur tous nos plans d'hébergement web. Pour les serveurs cloud, la facturation est à l'heure.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="pricing.faq.q4">Les certificats SSL sont-ils inclus ?</h3>
+                            <i data-lucide="chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="pricing.faq.a4">Oui, tous nos plans incluent un certificat SSL gratuit (Let's Encrypt) avec renouvellement automatique pour sécuriser votre site.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="pricing.faq.q5">Puis-je migrer mon site existant ?</h3>
+                            <i data-lucide="chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="pricing.faq.a5">Absolument ! Notre équipe peut vous aider à migrer votre site gratuitement. Contactez notre support pour organiser la migration.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <div class="faq-question">
+                            <h3 data-i18n="pricing.faq.q6">Quel type de support est disponible ?</h3>
+                            <i data-lucide="chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="pricing.faq.a6">Le support varie selon votre plan : email pour Starter, prioritaire 24/7 pour Pro, et dédié pour Business. Tous avec des temps de réponse garantis.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-inner">
+                <h2 data-i18n="pricing.cta.title">Prêt à démarrer votre projet ?</h2>
+                <p data-i18n="pricing.cta.subtitle">Rejoignez des milliers d'entreprises qui nous font confiance</p>
+                <div class="cta-buttons">
+                    <a href="#" class="primary-btn">
+                        <span data-i18n="pricing.cta.trial">Essai gratuit 14 jours</span>
+                        <i data-lucide="rocket"></i>
+                    </a>
+                    <a href="../contact/index.html" class="secondary-btn">
+                        <span data-i18n="pricing.cta.contact">Contacter les ventes</span>
+                        <i data-lucide="phone"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer" role="contentinfo">
+            <div class="footer-inner">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <img src="../Images/logoCloud24connectWHITE.png" alt="Cloud24Connect Logo" class="logo-image logo-dark">
+                            <img src="../Images/logoCloud24connect.png" alt="Cloud24Connect Logo" class="logo-image logo-light">
+                        </div>
+                        <p class="footer-tagline" data-i18n="footer.tagline">Empowering your digital transformation with reliable cloud solutions.</p>
+                    </div>
+
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="../Cloud2Connect.html" data-i18n="nav.home">Home</a></li>
+                            <li><a href="../solution/solutions.html" data-i18n="nav.solutions">Solutions</a></li>
+                            <li><a href="../Pricing/Pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="../AboutUs/AboutUs.html" data-i18n="nav.about">About</a></li>
+                            <li><a href="../Blog/Blog.html" data-i18n="nav.blog">Blog</a></li>
+                            <li><a href="../contact/contact.html" data-i18n="nav.contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-contact">
+                        <h4 data-i18n="footer.contact">Contact</h4>
+                        <div class="contact-detailsFooter">
+                            <p><span class="contact-info">CloudConnect24@gmail.com</span></p>
+                            <p><span class="contact-info">+216 00 000 000</span></p>
+                        </div>
+                        <div class="social-icons" aria-hidden="false">
+                            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                            <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p data-i18n="footer.copyright">© 2024 Cloud24Connect. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+                        <span>·</span>
+                        <a href="#" data-i18n="footer.terms">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="Pricing.js"></script>
+        <script>
+            // Initialize Lucide icons after page load
+            document.addEventListener('DOMContentLoaded', () => {
+                if (typeof lucide !== 'undefined') {
+                    lucide.createIcons();
+                }
+            });
+        </script>
+</body>
+
+</html>
