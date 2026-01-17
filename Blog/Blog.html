@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Cloud24Connect</title>
+    <link rel="stylesheet" href="StyleBlog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="../Translations.js"></script>
+    <script src="Blog.js"></script>
+</head>
+
+<body>
+    <!-- Mouse Gradient Effect -->
+    <div id="mouse-gradient"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <a href="../Cloud2Connect.html">
+                <img src="../Images/logoCloud24connectWHITE.png" alt="Cloud24Connect Logo" class="logo-image logo-dark">
+                <img src="../Images/logoCloud24connect.png" alt="Cloud24Connect Logo" class="logo-image logo-light">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../Cloud2Connect.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="../solution/solutions.html"><span data-i18n="nav.solutions">Solutions</span></a></li>
+            <li><a href="../Pricing/Pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+            <li><a href="../AboutUs/AboutUs.html" data-i18n="nav.about">About</a></li>
+            <li><a href="../Blog/Blog.html" data-i18n="nav.blog">Blog</a></li>
+            <li><a href="../contact/contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <div class="lang-dropdown">
+                <button class="lang-toggle" aria-label="Language">
+                    <i data-lucide="globe"></i>
+                    <span class="current-lang">EN</span>
+                    <i data-lucide="chevron-down" class="lang-chevron"></i>
+                </button>
+                <div class="lang-menu">
+                    <button class="lang-option active" data-lang="en">
+                        <span>English</span>
+                    </button>
+                    <button class="lang-option" data-lang="fr">
+                        <span>Français</span>
+                    </button>
+                </div>
+            </div>
+
+            <label class="theme-switch">
+                <input type="checkbox" class="theme-switch__checkbox">
+                <div class="theme-switch__container">
+                    <div class="theme-switch__clouds"></div>
+                    <div class="theme-switch__circle-container">
+                        <div class="theme-switch__sun-moon-container">
+                            <div class="theme-switch__moon">
+                                <div class="theme-switch__spot"></div>
+                                <div class="theme-switch__spot"></div>
+                                <div class="theme-switch__spot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </label>
+
+            <a href="#" class="cta-button">
+                <span data-i18n="nav.getStarted">Get Started</span>
+                <i data-lucide="arrow-right"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="blog-hero">
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-content">
+            <h1><span data-i18n="blog.hero.title">Our</span> <span class="gradient-text" data-i18n="blog.hero.titleGradient">Blog</span></h1>
+            <p data-i18n="blog.hero.subtitle">Insights, updates, and stories from our team. Stay informed about the latest trends in technology and innovation.</p>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+                <input type="text" id="searchInput" data-i18n-placeholder="blog.search.placeholder" placeholder="Search articles...">
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Filter -->
+    <section class="categories-section">
+        <div class="categories-container">
+            <button class="category-btn active" data-category="all" data-i18n="blog.category.all">All Posts</button>
+            <button class="category-btn" data-category="technology" data-i18n="blog.category.technology">Technology</button>
+            <button class="category-btn" data-category="design" data-i18n="blog.category.design">Design</button>
+            <button class="category-btn" data-category="business" data-i18n="blog.category.business">Business</button>
+            <button class="category-btn" data-category="development" data-i18n="blog.category.development">Development</button>
+            <button class="category-btn" data-category="ai" data-i18n="blog.category.ai">AI & ML</button>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="featured-post">
+        <div class="featured-inner">
+            <div class="featured-badge">Featured Article</div>
+            <div class="featured-grid">
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop" alt="Featured Post">
+                </div>
+                <div class="featured-content">
+                    <div class="post-meta">
+                        <span class="post-category">AI & ML</span>
+                        <span class="post-date">Dec 10, 2024</span>
+                    </div>
+                    <h2>The Future of AI: Trends Shaping 2025 and Beyond</h2>
+                    <p>Explore the groundbreaking developments in artificial intelligence that are transforming industries and reshaping our digital landscape. From generative AI to edge computing, discover what's next.</p>
+                    <div class="featured-footer">
+                        <div class="author-info">
+                            <div class="author-avatar">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="author-name">Sarah Johnson</div>
+                                <div class="author-role">Chief Technology Officer</div>
+                            </div>
+                        </div>
+                        <a href="#" class="read-more-btn">
+                            <span>Read Article</span>
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-posts-section">
+        <div class="blog-grid" id="blogGrid">
+            <!-- Post 1 -->
+            <article class="blog-card" data-category="technology">
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop" alt="Post">
+                    <span class="post-category-badge">Technology</span>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-date">Dec 8, 2024</span>
+                        <span class="read-time">5 min read</span>
+                    </div>
+                    <h3>Cloud Computing Trends for Modern Businesses</h3>
+                    <p>Discover how cloud technologies are revolutionizing business operations and enabling unprecedented scalability.</p>
+                    <div class="post-footer">
+                        <div class="author-simple">
+                            <div class="author-avatar-small">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                </svg>
+                            </div>
+                            <span>Michael Chen</span>
+                        </div>
+                        <a href="#" class="read-link">
+                            Read more
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="blog-card" data-category="design">
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop" alt="Post">
+                    <span class="post-category-badge">Design</span>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-date">Dec 7, 2024</span>
+                        <span class="read-time">4 min read</span>
+                    </div>
+                    <h3>UX Design Principles That Drive Engagement</h3>
+                    <p>Learn the fundamental principles that create intuitive and engaging user experiences.</p>
+                    <div class="post-footer">
+                        <div class="author-simple">
+                            <div class="author-avatar-small">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                </svg>
+                            </div>
+                            <span>Emma Wilson</span>
+                        </div>
+                        <a href="#" class="read-link">
+                            Read more
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Post 3 -->
+            <article class="blog-card" data-category="business">
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Post">
+                    <span class="post-category-badge">Business</span>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-date">Dec 6, 2024</span>
+                        <span class="read-time">6 min read</span>
+                    </div>
+                    <h3>Digital Transformation: A Strategic Guide</h3>
+                    <p>Navigate the complexities of digital transformation with our comprehensive strategic framework.
+                    </p>
+                    <div class="post-footer">
+                        <div class="author-simple">
+                            <div class="author-avatar-small">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                </svg>
+                            </div>
+                            <span>David Martinez</span>
+                        </div>
+                        <a href="#" class="read-link">
+                            Read more
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Post 4 -->
+            <article class="blog-card" data-category="development">
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop" alt="Post">
+                    <span class="post-category-badge">Development</span>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-date">Dec 5, 2024</span>
+                        <span class="read-time">7 min read</span>
+                    </div>
+                    <h3>Modern JavaScript Frameworks Comparison</h3>
+                    <p>An in-depth analysis of React, Vue, and Angular to help you choose the right framework.</p>
+                    <div class="post-footer">
+                        <div class="author-simple">
+                            <div class="author-avatar-small">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                </svg>
+                            </div>
+                            <span>Alex Thompson</span>
+                        </div>
+                        <a href="#" class="read-link">
+                            Read more
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Post 5 -->
+            <article class="blog-card" data-category="ai">
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=400&fit=crop" alt="Post">
+                    <span class="post-category-badge">AI & ML</span>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-date">Dec 4, 2024</span>
+                        <span class="read-time">8 min read</span>
+                    </div>
+                    <h3>Machine Learning in Production: Best Practices</h3>
+                    <p>Essential strategies for deploying and maintaining ML models in production environments.</p>
+                    <div class="post-footer">
+                        <div class="author-simple">
+                            <div class="author-avatar-small">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                </svg>
+                            </div>
+                            <span>Lisa Anderson</span>
+                        </div>
+                        <a href="#" class="read-link">
+                            Read more
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Post 6 -->
+            <article class="blog-card" data-category="technology">
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop" alt="Post">
+                    <span class="post-category-badge">Technology</span>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-date">Dec 3, 2024</span>
+                        <span class="read-time">5 min read</span>
+                    </div>
+                    <h3>Cybersecurity Essentials for 2025</h3>
+                    <p>Protect your digital assets with these critical cybersecurity measures and best practices.</p>
+                    <div class="post-footer">
+                        <div class="author-simple">
+                            <div class="author-avatar-small">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                </svg>
+                            </div>
+                            <span>James Wilson</span>
+                        </div>
+                        <a href="#" class="read-link">
+                            Read more
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="load-more-container">
+            <button class="load-more-btn">
+                <span>Load More Articles</span>
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <div class="newsletter-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                    </path>
+                </svg>
+            </div>
+            <h2 data-i18n="blog.newsletter.title">Stay Updated</h2>
+            <p data-i18n="blog.newsletter.subtitle">Subscribe to our newsletter and never miss our latest insights, updates, and exclusive content.</p>
+            <form class="newsletter-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="cbc6f390-180d-4296-b043-2bbb797382a9">
+                <input type="email" name="email" data-i18n-placeholder="blog.newsletter.placeholder" placeholder="Enter your email address" required>
+                <button type="submit" class="subscribe-btn">
+                    <span data-i18n="blog.newsletter.button">Subscribe</span>
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="../Images/logoCloud24connectWHITE.png" alt="Cloud24Connect Logo" class="logo-image logo-dark">
+                        <img src="../Images/logoCloud24connect.png" alt="Cloud24Connect Logo" class="logo-image logo-light">
+                    </div>
+                    <p class="footer-tagline" data-i18n="footer.tagline">Empowering your digital transformation with reliable cloud solutions.</p>
+                </div>
+
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="../Cloud2Connect.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="../solution/solutions.html" data-i18n="nav.solutions">Solutions</a></li>
+                        <li><a href="../Pricing/Pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="../AboutUs/AboutUs.html" data-i18n="nav.about">About</a></li>
+                        <li><a href="../Blog/Blog.html" data-i18n="nav.blog">Blog</a></li>
+                        <li><a href="../contact/contact.html" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 data-i18n="footer.contact">Contact</h4>
+                    <div class="contact-detailsFooter">
+                        <p><span class="contact-info">CloudConnect24@gmail.com</span></p>
+                        <p><span class="contact-info">+216 00 000 000</span></p>
+                    </div>
+                    <div class="social-icons" aria-hidden="false">
+                        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">© 2024 Cloud24Connect. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+                    <span>·</span>
+                    <a href="#" data-i18n="footer.terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
