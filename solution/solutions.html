@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Solutions - Cloud24Connect</title>
+    <link rel="stylesheet" href="solutions.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="../translations.js"></script>
+</head>
+
+<body data-theme="dark">
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation - UPDATED TO MATCH HOMEPAGE -->
+    <nav>
+        <div class="logo">
+            <a href="../Cloud2Connect.html">
+                <img src="../Images/logoCloud24connectWHITE.png" alt="Cloud24Connect Logo" class="logo-image logo-dark">
+                <img src="../Images/logoCloud24connect.png" alt="Cloud24Connect Logo" class="logo-image logo-light">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../Cloud2Connect.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="../solution/solutions.html"><span data-i18n="nav.solutions">Solutions</span></a></li>
+            <li><a href="../Pricing/Pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+            <li><a href="../AboutUs/AboutUs.html" data-i18n="nav.about">About</a></li>
+            <li><a href="../Blog/Blog.html" data-i18n="nav.blog">Blog</a></li>
+            <li><a href="../Contact/contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <div class="lang-dropdown">
+                <button class="lang-toggle" aria-label="Language">
+                    <i data-lucide="globe"></i>
+                    <span class="current-lang">EN</span>
+                    <i data-lucide="chevron-down" class="lang-chevron"></i>
+                </button>
+                <div class="lang-menu">
+                    <button class="lang-option" data-lang="en">
+                        <span>English</span>
+                    </button>
+                    <button class="lang-option" data-lang="fr">
+                        <span>Français</span>
+                    </button>
+                </div>
+            </div>
+
+            <label class="theme-switch">
+                <input type="checkbox" class="theme-switch__checkbox">
+                <div class="theme-switch__container">
+                    <div class="theme-switch__clouds"></div>
+                    <div class="theme-switch__circle-container">
+                        <div class="theme-switch__sun-moon-container">
+                            <div class="theme-switch__moon">
+                                <div class="theme-switch__spot"></div>
+                                <div class="theme-switch__spot"></div>
+                                <div class="theme-switch__spot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </label>
+
+            <a href="#" class="cta-button">
+                <span data-i18n="nav.getStarted">Get Started</span>
+                <i data-lucide="arrow-right"></i>
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1><span data-i18n="solutions.hero.title1">Complete</span> <span class="gradient-text" data-i18n="solutions.hero.title2">Cloud Solutions</span></h1>
+            <p data-i18n="solutions.hero.subtitle">Comprehensive services designed to power your digital infrastructure with reliability, security, and scalability.</p>
+        </div>
+    </section>
+
+    <!-- Solutions Categories -->
+    <section class="solutions-section">
+        <div class="solutions-container">
+
+            <!-- Hosting -->
+            <div class="solution-category" id="hosting">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i data-lucide="server"></i>
+                    </div>
+                    <div>
+                        <h2 data-i18n="solutions.hosting.title">Hosting Solutions</h2>
+                        <p data-i18n="solutions.hosting.subtitle">Powerful and flexible hosting infrastructure for all your needs</p>
+                    </div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="hard-drive"></i>
+                        </div>
+                        <h3 data-i18n="solutions.hosting.vps.title">VPS Hosting</h3>
+                        <p data-i18n="solutions.hosting.vps.description">Scalable virtual private servers with dedicated resources, full root access, and guaranteed performance for your applications.</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.hosting.vps.feature1">Full Root
+                                    Access</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.hosting.vps.feature2">SSD
+                                    Storage</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.hosting.vps.feature3">99.9%
+                                    Uptime</span></li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <h3 data-i18n="solutions.hosting.email.title">Email Hosting</h3>
+                        <p data-i18n="solutions.hosting.email.description">Professional email solutions with advanced spam protection, unlimited aliases, and seamless integration with your domain.</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.hosting.email.feature1">Custom
+                                    Domain</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.hosting.email.feature2">Spam
+                                    Protection</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.hosting.email.feature3">Mobile
+                                    Sync</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Control Panel -->
+            <div class="solution-category" id="control-panel">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i data-lucide="settings"></i>
+                    </div>
+                    <div>
+                        <h2 data-i18n="solutions.controlPanel.title">Control Panels</h2>
+                        <p data-i18n="solutions.controlPanel.subtitle">Industry-leading management tools for effortless server administration</p>
+                    </div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="layout-dashboard"></i>
+                        </div>
+                        <h3 data-i18n="solutions.controlPanel.cpanel.title">cPanel</h3>
+                        <p data-i18n="solutions.controlPanel.cpanel.description">The world's most popular control panel with intuitive interface for managing websites, databases, and email accounts.</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.controlPanel.cpanel.feature1">One-Click Apps</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.controlPanel.cpanel.feature2">File
+                                    Manager</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.controlPanel.cpanel.feature3">Auto
+                                    Backups</span></li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="terminal"></i>
+                        </div>
+                        <h3 data-i18n="solutions.controlPanel.plesk.title">Plesk</h3>
+                        <p data-i18n="solutions.controlPanel.plesk.description">Comprehensive hosting platform supporting multiple OS, perfect for managing WordPress and other applications efficiently.
+                        </p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.controlPanel.plesk.feature1">WordPress Toolkit</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.controlPanel.plesk.feature2">Multi-Platform</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.controlPanel.plesk.feature3">Security Core</span></li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <h3 data-i18n="solutions.controlPanel.cloudlinux.title">CloudLinux</h3>
+                        <p data-i18n="solutions.controlPanel.cloudlinux.description">Enhanced server stability and security with LVE technology, ensuring optimal resource allocation and improved performance.
+                        </p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.controlPanel.cloudlinux.feature1">Resource Limits</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.controlPanel.cloudlinux.feature2">CageFS Security</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.controlPanel.cloudlinux.feature3">PHP Selector</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backup -->
+            <div class="solution-category" id="backup">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i data-lucide="database"></i>
+                    </div>
+                    <div>
+                        <h2 data-i18n="solutions.backup.title">Backup & Recovery</h2>
+                        <p data-i18n="solutions.backup.subtitle">Comprehensive data protection with automated backups and disaster recovery</p>
+                    </div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="cloud-upload"></i>
+                        </div>
+                        <h3 data-i18n="solutions.backup.baas.title">Backup as a Service</h3>
+                        <p data-i18n="solutions.backup.baas.description">Automated cloud backup solutions with encryption, versioning, and instant recovery for complete peace of mind.</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.backup.baas.feature1">Automated
+                                    Backups</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.backup.baas.feature2">Encryption</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.backup.baas.feature3">Version
+                                    Control</span></li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="life-buoy"></i>
+                        </div>
+                        <h3 data-i18n="solutions.backup.disaster.title">Disaster Recovery</h3>
+                        <p data-i18n="solutions.backup.disaster.description">Rapid recovery solutions with failover systems, ensuring business continuity with minimal downtime during emergencies.</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.backup.disaster.feature1">Instant
+                                    Recovery</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.backup.disaster.feature2">Failover
+                                    Systems</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.backup.disaster.feature3">24/7
+                                    Monitoring</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security -->
+            <div class="solution-category" id="security">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <div>
+                        <h2 data-i18n="solutions.security.title">Security Solutions</h2>
+                        <p data-i18n="solutions.security.subtitle">Enterprise-grade security to protect your infrastructure and data</p>
+                    </div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="lock"></i>
+                        </div>
+                        <h3 data-i18n="solutions.security.ssl.title">SSL Certificates</h3>
+                        <p data-i18n="solutions.security.ssl.description">Industry-standard SSL/TLS certificates to encrypt data, build trust, and improve SEO rankings for your websites.</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.security.ssl.feature1">256-bit
+                                    Encryption</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.security.ssl.feature2">Free
+                                    Installation</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.security.ssl.feature3">Warranty
+                                    Included</span></li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="shield-alert"></i>
+                        </div>
+                        <h3 data-i18n="solutions.security.waf.title">Web Application Firewall</h3>
+                        <p data-i18n="solutions.security.waf.description">Advanced WAF protection against SQL injection, XSS attacks, and other OWASP top 10 vulnerabilities in real-time.</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.security.waf.feature1">DDoS
+                                    Protection</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.security.waf.feature2">Real-time
+                                    Blocking</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.security.waf.feature3">Traffic
+                                    Analysis</span></li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="bug"></i>
+                        </div>
+                        <h3 data-i18n="solutions.security.antivirus.title">Antivirus Protection</h3>
+                        <p data-i18n="solutions.security.antivirus.description">Enterprise antivirus solutions with real-time scanning, malware detection, and automatic threat removal capabilities.</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.security.antivirus.feature1">Real-time Scanning</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.security.antivirus.feature2">Malware Removal</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.security.antivirus.feature3">Auto
+                                    Updates</span></li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="network"></i>
+                        </div>
+                        <h3 data-i18n="solutions.security.vpn.title">VPN Services</h3>
+                        <p data-i18n="solutions.security.vpn.description">Secure VPN solutions for remote access with military-grade encryption, ensuring privacy and secure connections anywhere.</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.security.vpn.feature1">Encrypted
+                                    Tunnel</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.security.vpn.feature2">Multi-device</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.security.vpn.feature3">No Logs
+                                    Policy</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Services -->
+            <div class="solution-category">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i data-lucide="package"></i>
+                    </div>
+                    <div>
+                        <h2 data-i18n="solutions.additional.title">Additional Services</h2>
+                        <p data-i18n="solutions.additional.subtitle">Extended solutions to complement your infrastructure
+                        </p>
+                    </div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="microsoft"></i>
+                        </div>
+                        <h3 data-i18n="solutions.additional.microsoft.title">Microsoft Licenses</h3>
+                        <p data-i18n="solutions.additional.microsoft.description">Official Microsoft licensing including Windows Server, Office 365, and Azure services at competitive prices with full support.</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.additional.microsoft.feature1">Windows Server</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.additional.microsoft.feature2">Office 365</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.additional.microsoft.feature3">Azure Credits</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Managed IT Services -->
+            <div class="solution-category featured">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i data-lucide="headphones"></i>
+                    </div>
+                    <div>
+                        <h2 data-i18n="solutions.managed.title">Managed IT Services</h2>
+                        <p data-i18n="solutions.managed.subtitle">Complete IT infrastructure management by our expert team
+                        </p>
+                    </div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="git-branch"></i>
+                        </div>
+                        <h3 data-i18n="solutions.managed.network.title">Network Design</h3>
+                        <p data-i18n="solutions.managed.network.description">Custom network architecture design and implementation tailored to your business needs for optimal performance and scalability.</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.managed.network.feature1">Custom
+                                    Architecture</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.managed.network.feature2">Load
+                                    Balancing</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.managed.network.feature3">Scalability Planning</span></li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="cpu"></i>
+                        </div>
+                        <h3 data-i18n="solutions.managed.infrastructure.title">Infrastructure Management</h3>
+                        <p data-i18n="solutions.managed.infrastructure.description">24/7 monitoring and management of your entire IT infrastructure with proactive maintenance and optimization services.</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.managed.infrastructure.feature1">24/7 Monitoring</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.managed.infrastructure.feature2">Performance Tuning</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.managed.infrastructure.feature3">Patch Management</span></li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="mail-forward"></i>
+                        </div>
+                        <h3 data-i18n="solutions.managed.mailMigration.title">Mail Migration</h3>
+                        <p data-i18n="solutions.managed.mailMigration.description">Seamless email migration services with zero downtime, supporting all major platforms including Exchange, Gmail, and Office 365.
+                        </p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.managed.mailMigration.feature1">Zero Downtime</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.managed.mailMigration.feature2">Data Integrity</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.managed.mailMigration.feature3">All Platforms</span></li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="move"></i>
+                        </div>
+                        <h3 data-i18n="solutions.managed.envMigration.title">Environment Migration</h3>
+                        <p data-i18n="solutions.managed.envMigration.description">Complete infrastructure migration services including cloud migration, data center relocation, and platform transitions with minimal risk.</p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.managed.envMigration.feature1">Cloud Migration</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.managed.envMigration.feature2">Risk Assessment</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.managed.envMigration.feature3">Testing & Validation</span></li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="activity"></i>
+                        </div>
+                        <h3 data-i18n="solutions.managed.monitoring.title">Monitoring Tools</h3>
+                        <p data-i18n="solutions.managed.monitoring.description">Advanced monitoring solutions with custom dashboards, real-time alerts, and comprehensive reporting for complete visibility.
+                        </p>
+                        <ul class="service-features">
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.managed.monitoring.feature1">Real-time Alerts</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.managed.monitoring.feature2">Custom Dashboards</span></li>
+                            <li><i data-lucide="check"></i><span data-i18n="solutions.managed.monitoring.feature3">Performance Reports</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2 data-i18n="solutions.cta.title">Ready to Transform Your Infrastructure?</h2>
+            <p data-i18n="solutions.cta.subtitle">Let's discuss how our solutions can power your business growth</p>
+            <div class="cta-buttons">
+                <a href="#" class="cta-btn primary">
+                    <span data-i18n="solutions.cta.getStarted">Get Started</span>
+                    <i data-lucide="arrow-right"></i>
+                </a>
+                <a href="../Pricing/Pricing.html" class="cta-btn secondary">
+                    <span data-i18n="solutions.cta.viewPricing">View Pricing</span>
+                    <i data-lucide="dollar-sign"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- UPDATED FOOTER TO MATCH HOMEPAGE -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="../Images/logoCloud24connectWHITE.png" alt="Cloud24Connect Logo" class="logo-image logo-dark">
+                        <img src="../Images/logoCloud24connect.png" alt="Cloud24Connect Logo" class="logo-image logo-light">
+                    </div>
+                    <p class="footer-tagline" data-i18n="footer.tagline">Empowering your digital transformation with reliable cloud solutions.</p>
+                </div>
+
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="../Cloud2Connect.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="../solution/solutions.html" data-i18n="nav.solutions">Solutions</a></li>
+                        <li><a href="../Pricing/Pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="../AboutUs/AboutUs.html" data-i18n="nav.about">About</a></li>
+                        <li><a href="../Blog/Blog.html" data-i18n="nav.blog">Blog</a></li>
+                        <li><a href="../contact/contact.html" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 data-i18n="footer.contact">Contact</h4>
+                    <div class="contact-detailsFooter">
+                        <p><span class="contact-info">CloudConnect24@gmail.com</span></p>
+                        <p><span class="contact-info">+216 00 000 000</span></p>
+                    </div>
+                    <div class="social-icons" aria-hidden="false">
+                        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">© 2024 Cloud24Connect. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+                    <span>·</span>
+                    <a href="#" data-i18n="footer.terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="solutions.js"></script>
+</body>
+
+</html>
