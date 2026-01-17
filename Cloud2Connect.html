@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudHost - Premium Cloud Hosting Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="translations.js"></script>
+    <script src="Cloud2Connect.js"></script>
+</head>
+
+<body data-theme="dark">
+    <div id="mouse-gradient"></div>
+    <nav>
+        <div class="logo">
+            <a href="../Cloud2Connect.html">
+                <img src="Images/logoCloud24connectWHITE.png" alt="Cloud24Connect Logo" class="logo-image logo-dark">
+                <img src="Images/logoCloud24connect.png" alt="Cloud24Connect Logo" class="logo-image logo-light">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="Cloud2Connect.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="solution/solutions.html"><span data-i18n="nav.solutions">Solutions</span></a></li>
+            <li><a href="Pricing/Pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+            <li><a href="AboutUs/AboutUs.html" data-i18n="nav.about">About</a></li>
+            <li><a href="Blog/Blog.html" data-i18n="nav.blog">Blog</a></li>
+            <li><a href="Contact/contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <div class="lang-dropdown">
+                <button class="lang-toggle" aria-label="Language">
+                    <i data-lucide="globe"></i>
+                    <span class="current-lang">EN</span>
+                    <i data-lucide="chevron-down" class="lang-chevron"></i>
+                </button>
+                <div class="lang-menu">
+                    <button class="lang-option" data-lang="en">
+                        <span>English</span>
+                    </button>
+                    <button class="lang-option" data-lang="fr">
+                        <span>Français</span>
+                    </button>
+                </div>
+            </div>
+
+            <label class="theme-switch">
+                <input type="checkbox" class="theme-switch__checkbox">
+                <div class="theme-switch__container">
+                    <div class="theme-switch__clouds"></div>
+                    <div class="theme-switch__circle-container">
+                        <div class="theme-switch__sun-moon-container">
+                            <div class="theme-switch__moon">
+                                <div class="theme-switch__spot"></div>
+                                <div class="theme-switch__spot"></div>
+                                <div class="theme-switch__spot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </label>
+
+            <a href="#" class="cta-button">
+                <span data-i18n="nav.getStarted">/span>
+                    <i data-lucide="arrow-right"></i>
+            </a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <canvas id="clouds-canvas"></canvas>
+        <canvas id="particles-canvas"></canvas>
+
+        <div class="hero-content">
+            <h1>
+                <span data-i18n="hero.title1"></span><br>
+                <span class="gradient-text" data-i18n="hero.title2"></span>
+                <span data-i18n="hero.title3"></span>
+                </h1>
+                <p data-i18n="hero.subtitle"> </p>
+                <div class="hero-buttons">
+                    <a href="#" class="primary-btn">
+                        <span data-i18n="hero.freeTrial"></span>
+                        <i data-lucide="rocket"></i>
+                    </a>
+                    <a href="Pricing/Pricing.html" class="secondary-btn">
+                        <span data-i18n="hero.viewPricing"></span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+        </div>
+        </section>
+
+        <section class="stats">
+            <div class="stats-left">
+                <h2 class="section-title" data-i18n="section-title"></h2>
+                <p class="section-subtitle" data-i18n="section-subtitle">
+                </p>
+                <a href="#" class="cta-button" data-i18n="stat.button"></a>
+            </div>
+
+            <div class="stats-right">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="200">0</div>
+                        <div class="stat-pill" data-i18n="stats-uptime"></div>
+                        <div class="stat-label" data-i18n="label-uptime"></div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-pill" data-i18n="stats-users"></div>
+                        <div class="stat-label" data-i18n="label-users"></div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-pill" data-i18n="stats-servers"></div>
+                        <div class="stat-label" data-i18n="label-servers"></div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="95">0</div>
+                        <div class="stat-pill" data-i18n="stats-support"></div>
+                        <div class="stat-label" data-i18n="label-support"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="cards-section">
+                <div class="section-header">
+                    <h1 class="section-title" data-i18n="features-title"></h1>
+                    <p class="section-subtitle" data-i18n="features-subtitle"></p>
+                </div>
+
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 class="card-title" data-i18n="card1-title"></h2>
+                            <p class="card-description" data-i18n="card1-description"></p>
+                        </div>
+                        <div class="card-image">
+                            <img src="Images/security.png" alt="Security">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 class="card-title" data-i18n="card2-title"></h2>
+                            <p class="card-description" data-i18n="card2-description"></p>
+                        </div>
+                        <div class="card-image">
+                            <img src="Images/scale.png" alt="Scaling">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 class="card-title" data-i18n="card3-title"></h2>
+                            <p class="card-description" data-i18n="card3-description"></p>
+                        </div>
+                        <div class="card-image">
+                            <img src="Images/glob.png" alt="Network">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 class="card-title" data-i18n="card4-title"></h2>
+                            <p class="card-description" data-i18n="card4-description"></p>
+                        </div>
+                        <div class="card-image">
+                            <img src="Images/pricing.png" alt="Pricing">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 class="card-title" data-i18n="card5-title"></h2>
+                            <p class="card-description" data-i18n="card5-description"></p>
+                        </div>
+                        <div class="card-image">
+                            <img src="Images/uptime.png" alt="Uptime">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 class="card-title" data-i18n="card6-title"></h2>
+                            <p class="card-description" data-i18n="card6-description"></p>
+                        </div>
+                        <div class="card-image">
+                            <img src="Images/fast.png" alt="Speed">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="infrastructure" id="infrastructure">
+            <div class="infra-grid">
+                <div class="infra-left">
+                    <h2 class="section-title" data-i18n="infra.title"></h2>
+                    <div class="infra-intro">
+                        <h3 data-i18n="infra.subtitle"></h3>
+                        <p data-i18n="infra.description1"></p>
+                        <p data-i18n="infra.description2"></p>
+                    </div>
+                </div>
+
+                <div class="infra-right">
+                    <div class="infra-cards">
+                        <article class="infra-card" aria-labelledby="infra-1-title">
+                            <h4 id="infra-1-title" class="infra-card-title" data-i18n="infra.card1.title"></h4>
+                            <p class="infra-card-desc" data-i18n="infra.card1.desc"></p>
+                        </article>
+
+                        <article class="infra-card" aria-labelledby="infra-2-title">
+                            <h4 id="infra-2-title" class="infra-card-title" data-i18n="infra.card2.title"></h4>
+                            <p class="infra-card-desc" data-i18n="infra.card2.desc"></p>
+                        </article>
+
+                        <article class="infra-card" aria-labelledby="infra-3-title">
+                            <h4 id="infra-3-title" class="infra-card-title" data-i18n="infra.card3.title"></h4>
+                            <p class="infra-card-desc" data-i18n="infra.card3.desc"></p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing" id="pricing">
+            <div class="pricing-inner">
+                <div class="pricing-header">
+                    <h2 class="section-title" data-i18n="pricing.title"></h2>
+                    <p class="section-subtitle" data-i18n="pricing.subtitle"></p>
+                </div>
+
+                <div class="pricing-grid">
+                    <article class="pricing-card">
+                        <header class="pricing-card-header">
+                            <h3 class="pricing-name" data-i18n="pricing.starter.name"></h3>
+                            <p class="pricing-tag" data-i18n="pricing.starter.tag"></p>
+                            <span class="pricing-period" data-i18n="pricing.period"></span>
+
+                        </header>
+                        <ul class="pricing-features">
+                            <li data-i18n="pricing.starter.feature1"></li>
+                            <li data-i18n="pricing.starter.feature2"></li>
+                            <li data-i18n="pricing.starter.feature3"></li>
+                            <li data-i18n="pricing.starter.feature4"></li>
+                        </ul>
+                        <div class="pricing-cta">
+                            <a href="#" class="btn btn-primary btn-ghost" data-i18n="pricing.subscribe"></a>
+                        </div>
+                    </article>
+
+                    <article class="pricing-card recommended">
+                        <header class="pricing-card-header">
+                            <h3 class="pricing-name" data-i18n="pricing.pro.name"></h3>
+                            <p class="pricing-tag" data-i18n="pricing.pro.tag"></p>
+                            <div class="pricing-price">10 € <span class="pricing-period" data-i18n="pricing.period"></div>
+                    </header>
+                    <ul class="pricing-features">
+                        <li data-i18n="pricing.pro.feature1"></li>
+                        <li data-i18n="pricing.pro.feature2"></li>
+                        <li data-i18n="pricing.pro.feature3"></li>
+                        <li data-i18n="pricing.pro.feature4"></li>
+                    </ul>
+                    <div class="pricing-cta">
+                        <a href="#" class="btn btn-primary btn-ghost" data-i18n="pricing.subscribe"></a>
+                    </div>
+                </article>
+
+                <article class="pricing-card">
+                    <header class="pricing-card-header">
+                        <h3 class="pricing-name" data-i18n="pricing.business.name"></h3>
+                        <p class="pricing-tag" data-i18n="pricing.business.tag"></p>
+                        <div class="pricing-price">20 € <span class="pricing-period" data-i18n="pricing.period"></span>
+                            </div>
+                        </header>
+                        <ul class="pricing-features">
+                            <li data-i18n="pricing.business.feature1"></li>
+                            <li data-i18n="pricing.business.feature2"></li>
+                            <li data-i18n="pricing.business.feature3"></li>
+                            <li data-i18n="pricing.business.feature4"></li>
+                        </ul>
+                        <div class="pricing-cta">
+                            <a href="#" class="btn btn-primary btn-ghost" data-i18n="pricing.quote"></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog" id="blog">
+            <div class="blog-inner">
+                <div class="blog-header">
+                    <h2 class="section-title" data-i18n="blog.title"></h2>
+                    <p class="section-subtitle" data-i18n="blog.subtitle"></p>
+                </div>
+
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-illustration">
+                            <img src="Images/hosting.jpg" alt="How to choose hosting">
+                        </div>
+                        <h3 class="blog-title" data-i18n="blog.card1.title"></h3>
+                        <p class="blog-excerpt" data-i18n="blog.card1.excerpt"></p>
+                        <a href="#" class="btn btn-primary btn-ghost" data-i18n="blog.readMore"></a>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-illustration">
+                            <img src="Images/cloud.jpg" alt="Why cloud is faster">
+                        </div>
+                        <h3 class="blog-title" data-i18n="blog.card2.title"></h3>
+                        <p class="blog-excerpt" data-i18n="blog.card2.excerpt"></p>
+                        <a href="#" class="btn btn-primary btn-ghost" data-i18n="blog.readMore"></a>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-illustration">
+                            <img src="Images/mistakes.jpg" alt="Common launch mistakes">
+                        </div>
+                        <h3 class="blog-title" data-i18n="blog.card3.title"></h3>
+                        <p class="blog-excerpt" data-i18n="blog.card3.excerpt"></p>
+                        <a href="#" class="btn btn-primary btn-ghost" data-i18n="blog.readMore"></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-inner">
+                <div class="contact-header">
+                    <h2 class="section-title" data-i18n="contact.title"></h2>
+                    <p class="section-subtitle" data-i18n="contact.subtitle"></p>
+                </div>
+
+                <div class="contact-grid">
+                    <aside class="contact-form-wrapper" aria-labelledby="contact-form-title">
+                        <h3 id="contact-form-title" class="contact-form-title" data-i18n="contact.formTitle"></h3>
+
+                        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+                            <input type="hidden" name="access_key" value="cbc6f390-180d-4296-b043-2bbb797382a9">
+                            <input id="c-name" name="name" type="text" data-i18n-placeholder="contact.namePlaceholder" placeholder="Name" required>
+                            <input id="c-email" name="email" type="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="Email" required>
+                            <input id="c-subject" name="subject" type="text" data-i18n-placeholder="contact.subjectPlaceholder" placeholder="Subject">
+                            <textarea id="c-message" name="message" rows="6" data-i18n-placeholder="contact.messagePlaceholder" placeholder="Your message…" required></textarea>
+                            <div class="contact-form-actions">
+                                <button type="submit" class="btn btn-primary" data-i18n="contact.sendButton"></button>
+                            </div>
+                        </form>
+                    </aside>
+
+                    <div class="contact-map" aria-hidden="false">
+                        <div class="contact-details">
+                            <h3 data-i18n="contact.detailsTitle">Our details</h3>
+                            <p data-i18n="contact.emailLabel"> <span class="contact-info">CloudConnect24@gmail.com</span>
+                            </p>
+                            <p data-i18n="contact.phoneLabel"> <span class="contact-info">+216 00 000 000</span></p>
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.228633552332!2d10.0609607!3d36.8163495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd2d9783ace44f%3A0xde66d0d8c4b29aa6!2sISAMM%20Institut%20Sup%C3%A9rieur%20des%20Arts%20Multim%C3%A9dia%20de%20la%20Manouba!5e1!3m2!1sfr!2stn!4v1764360470316!5m2!1sfr!2stn"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer" role="contentinfo">
+            <div class="footer-inner">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <img src="Images/logoCloud24connectWHITE.png" alt="Cloud24Connect Logo" class="logo-image logo-dark">
+                            <img src="Images/logoCloud24connect.png" alt="Cloud24Connect Logo" class="logo-image logo-light">
+                        </div>
+                        <p class="footer-tagline" data-i18n="footer.tagline">Empowering your digital transformation with reliable cloud solutions.</p>
+                    </div>
+
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="Cloud2Connect.html" data-i18n="nav.home">Home</a></li>
+                            <li><a href="solution/solutions.html" data-i18n="nav.solutions">Solutions</a></li>
+                            <li><a href="Pricing/Pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="AboutUs/AboutUs.html" data-i18n="nav.about">About</a></li>
+                            <li><a href="Blog/Blog.html" data-i18n="nav.blog">Blog</a></li>
+                            <li><a href="contact/contact.html" data-i18n="nav.contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-contact">
+                        <h4 data-i18n="footer.contact">Contact</h4>
+                        <div class="contact-detailsFooter">
+                            <p><span class="contact-info">CloudConnect24@gmail.com</span></p>
+                            <p><span class="contact-info">+216 00 000 000</span></p>
+                        </div>
+                        <div class="social-icons" aria-hidden="false">
+                            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                            <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p data-i18n="footer.copyright">© 2024 Cloud24Connect. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+                        <span>·</span>
+                        <a href="#" data-i18n="footer.terms">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
