@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cloud24Connect</title>
+    <link rel="stylesheet" href="StyleAboutUs.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="../Translations.js"></script>
+    <script src="AboutUs.js"></script>
+</head>
+
+<body data-theme="dark">
+    <div id="mouse-gradient"></div>
+
+    <nav>
+        <div class="logo">
+            <img src="../Images/logoCloud24connectWHITE.png" alt="Cloud24Connect Logo" class="logo-image logo-dark">
+            <img src="../Images/logoCloud24connect.png" alt="Cloud24Connect Logo" class="logo-image logo-light">
+        </div>
+        <ul class="nav-links">
+            <li><a href="../Cloud2Connect.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="../solution/solutions.html"><span data-i18n="nav.solutions">Solutions</span></a></li>
+            <li><a href="../Pricing/Pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+            <li><a href="../AboutUs/AboutUs.html" data-i18n="nav.about">About</a></li>
+            <li><a href="../Blog/Blog.html" data-i18n="nav.blog">Blog</a></li>
+            <li><a href="../Contact/contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <div class="lang-dropdown">
+                <button class="lang-toggle" aria-label="Language">
+                    <i data-lucide="globe"></i>
+                    <span class="current-lang">EN</span>
+                    <i data-lucide="chevron-down" class="lang-chevron"></i>
+                </button>
+                <div class="lang-menu">
+                    <button class="lang-option active" data-lang="en">
+                        <span class="lang-flag">🇬🇧</span>
+                        <span>English</span>
+                    </button>
+                    <button class="lang-option" data-lang="fr">
+                        <span class="lang-flag">🇫🇷</span>
+                        <span>Français</span>
+                    </button>
+                </div>
+            </div>
+
+            <label class="theme-switch">
+                <input type="checkbox" class="theme-switch__checkbox">
+                <div class="theme-switch__container">
+                    <div class="theme-switch__clouds"></div>
+                    <div class="theme-switch__circle-container">
+                        <div class="theme-switch__sun-moon-container">
+                            <div class="theme-switch__moon">
+                                <div class="theme-switch__spot"></div>
+                                <div class="theme-switch__spot"></div>
+                                <div class="theme-switch__spot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </label>
+
+            <a href="#" class="cta-button">
+                <span data-i18n="nav.getStarted">Get Started</span>
+                <i data-lucide="arrow-right"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero about-hero">
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-content">
+            <h1>
+                <span data-i18n="about.hero.title1">We're Building the Future</span><br>
+                <span class="gradient-text" data-i18n="about.hero.title2">of Cloud Hosting</span>
+            </h1>
+            <p data-i18n="about.hero.subtitle">A passionate team dedicated to delivering innovative cloud solutions that empower businesses worldwide.</p>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats about-stats">
+        <div class="stats-grid-about">
+            <div class="stat-item">
+                <div class="stat-number" data-target="500">0</div>
+                <div class="stat-pill" data-i18n="about.stats.clients">Clients</div>
+                <div class="stat-label" data-i18n="about.stats.clients.label">Trusted by businesses worldwide</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="50">0</div>
+                <div class="stat-pill" data-i18n="about.stats.team">Team Members</div>
+                <div class="stat-label" data-i18n="about.stats.team.label">Expert professionals dedicated to your success
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="10">0</div>
+                <div class="stat-pill" data-i18n="about.stats.years">Years</div>
+                <div class="stat-label" data-i18n="about.stats.years.label">Of industry experience and innovation</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="24">0</div>
+                <div class="stat-pill" data-i18n="about.stats.countries">Countries</div>
+                <div class="stat-label" data-i18n="about.stats.countries.label">Global presence and support</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="infrastructure mission-section">
+        <div class="infra-grid">
+            <div class="infra-left">
+                <h2 class="section-title" data-i18n="about.mission.title">Our Mission</h2>
+                <div class="infra-intro">
+                    <p data-i18n="about.mission.p1">We believe in the power of technology to transform businesses. Our mission is to provide cutting-edge cloud hosting solutions that are secure, scalable, and accessible to everyone.</p>
+                    <p data-i18n="about.mission.p2">Since our founding in 2015, we've been committed to delivering exceptional service and innovative solutions that help our clients succeed in the digital age.
+                    </p>
+                </div>
+            </div>
+
+            <div class="infra-right">
+                <div class="infra-cards">
+                    <article class="infra-card">
+                        <h4 class="infra-card-title" data-i18n="about.mission.card1.title">Innovation First</h4>
+                        <p class="infra-card-desc" data-i18n="about.mission.card1.desc">We stay at the forefront of technology, constantly evolving our services to meet the changing needs of modern businesses.
+                        </p>
+                    </article>
+
+                    <article class="infra-card">
+                        <h4 class="infra-card-title" data-i18n="about.mission.card2.title">Customer Success</h4>
+                        <p class="infra-card-desc" data-i18n="about.mission.card2.desc">Your success is our success. We provide 24/7 support and proactive solutions to ensure your business never stops.</p>
+                    </article>
+
+                    <article class="infra-card">
+                        <h4 class="infra-card-title" data-i18n="about.mission.card3.title">Security & Trust</h4>
+                        <p class="infra-card-desc" data-i18n="about.mission.card3.desc">We implement the highest security standards to protect your data and maintain the trust you place in us.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="blog team-section">
+        <div class="blog-inner">
+            <div class="blog-header">
+                <h2 class="section-title" data-i18n="about.team.title">Meet Our Team</h2>
+                <p class="section-subtitle" data-i18n="about.team.subtitle">The talented people behind Cloud24Connect
+                </p>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card team-card">
+                    <div class="team-avatar">
+                        <i data-lucide="user"></i>
+                    </div>
+                    <h3 class="blog-title">Sophie Martin</h3>
+                    <p class="team-role">CEO & Founder</p>
+                    <p class="blog-excerpt">Visionary leader with 15 years of experience in cloud technology and business innovation.</p>
+                    <div class="team-social">
+                        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                        <a href="#" aria-label="Email"><i data-lucide="mail"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card team-card">
+                    <div class="team-avatar">
+                        <i data-lucide="user"></i>
+                    </div>
+                    <h3 class="blog-title">Thomas Dubois</h3>
+                    <p class="team-role">CTO</p>
+                    <p class="blog-excerpt">Expert in cloud architecture and AI, driving our technical innovation forward.
+                    </p>
+                    <div class="team-social">
+                        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                        <a href="#" aria-label="Email"><i data-lucide="mail"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card team-card">
+                    <div class="team-avatar">
+                        <i data-lucide="user"></i>
+                    </div>
+                    <h3 class="blog-title">Marie Laurent</h3>
+                    <p class="team-role">Design Lead</p>
+                    <p class="blog-excerpt">Creative designer passionate about user experience and modern interface design.
+                    </p>
+                    <div class="team-social">
+                        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        <a href="#" aria-label="Dribbble"><i data-lucide="dribbble"></i></a>
+                        <a href="#" aria-label="Email"><i data-lucide="mail"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="infrastructure timeline-section">
+        <div class="infra-grid timeline-grid">
+            <div class="infra-left">
+                <h2 class="section-title" data-i18n="about.journey.title">Our Journey</h2>
+                <div class="infra-intro">
+                    <p data-i18n="about.journey.subtitle">From a small startup to a global cloud hosting leader, our journey has been driven by innovation, dedication, and a commitment to excellence.</p>
+                </div>
+            </div>
+
+            <div class="infra-right">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2015</div>
+                        <h4>The Beginning</h4>
+                        <p>Cloud24Connect was founded with a vision to revolutionize cloud hosting.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2017</div>
+                        <h4>First Product Launch</h4>
+                        <p>Released our flagship cloud hosting platform to market acclaim.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2019</div>
+                        <h4>Global Expansion</h4>
+                        <p>Opened offices in 5 countries and expanded our team significantly.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2022</div>
+                        <h4>AI Integration</h4>
+                        <p>Integrated artificial intelligence into our cloud solutions.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2025</div>
+                        <h4>Market Leadership</h4>
+                        <p>Reached 500+ satisfied clients and international recognition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact cta-section-about">
+        <div class="contact-inner">
+            <div class="cta-content-about">
+                <div class="cta-icon">
+                    <i data-lucide="rocket"></i>
+                </div>
+                <h2 class="section-title" data-i18n="about.cta.title">Ready to Get Started?</h2>
+                <p class="section-subtitle" data-i18n="about.cta.subtitle">Join hundreds of companies that trust Cloud24Connect
+                </p>
+                <div class="hero-buttons">
+                    <a href="#" class="primary-btn">
+                        <span data-i18n="about.cta.trial">Start Free Trial</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                    <a href="../contact/index.html" class="secondary-btn">
+                        <span data-i18n="about.cta.contact">Contact Sales</span>
+                        <i data-lucide="mail"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="../Images/logoCloud24connectWHITE.png" alt="Cloud24Connect Logo" class="logo-image logo-dark">
+                        <img src="../Images/logoCloud24connect.png" alt="Cloud24Connect Logo" class="logo-image logo-light">
+                    </div>
+                    <p class="footer-tagline" data-i18n="footer.tagline">Empowering your digital transformation with reliable cloud solutions.</p>
+                </div>
+
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="../Cloud2Connect.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="../solution/solutions.html" data-i18n="nav.solutions">Solutions</a></li>
+                        <li><a href="../Pricing/Pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="../AboutUs/AboutUs.html" data-i18n="nav.about">About</a></li>
+                        <li><a href="../Blog/Blog.html" data-i18n="nav.blog">Blog</a></li>
+                        <li><a href="../contact/contact.html" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 data-i18n="footer.contact">Contact</h4>
+                    <div class="contact-detailsFooter">
+                        <p><span class="contact-info">CloudConnect24@gmail.com</span></p>
+                        <p><span class="contact-info">+216 00 000 000</span></p>
+                    </div>
+                    <div class="social-icons" aria-hidden="false">
+                        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">© 2024 Cloud24Connect. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+                    <span>·</span>
+                    <a href="#" data-i18n="footer.terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
